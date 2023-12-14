@@ -1,0 +1,68 @@
+[
+{
+    "model": "webapp.task",
+    "pk": 1,
+    "fields": {
+        "description": "test",
+        "status": "in_progress",
+        "data_of_complited": "2023-11-27",
+        "start_date": "2023-12-14T12:33:43.339Z",
+        "end_date": "2023-12-14T12:33:43.339Z",
+        "detailed_description": "home1"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 2,
+    "fields": {
+        "description": "test2",
+        "status": "in_progress",
+        "data_of_complited": "2023-11-30",
+        "start_date": "2023-12-14T12:33:56.871Z",
+        "end_date": "2023-12-14T12:33:56.871Z",
+        "detailed_description": "home2"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "description": "test3",
+        "status": "new",
+        "data_of_complited": "2023-11-30",
+        "start_date": "2023-12-14T12:34:19.324Z",
+        "end_date": "2023-12-14T12:34:19.324Z",
+        "detailed_description": "home3"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "description": "test4",
+        "status": "done",
+        "data_of_complited": "2023-12-01",
+        "start_date": "2023-12-14T12:34:37.545Z",
+        "end_date": "2023-12-14T12:34:37.545Z",
+        "detailed_description": "test version"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$eCH8HVqYOEhkNcVAxdF7S3$Vc3KGYxZn5r4uZi4sSq/fzYYzp8LSAJdo/xQMjcIp+g=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "vip.link.96@mail.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-03T09:05:22.001Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
