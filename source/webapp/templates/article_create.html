@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Create Article{% endblock %}
+{% block menu %}<a class="nav-link active" aria-current="page"   href="{% url 'index' %}">На главную</a>{% endblock %}
+{% block content %}
+<h1>Create Article</h1>
+
+<form action="/articles/add/" method="post">
+    {% csrf_token %}
+    <label>status</label>
+    <select name="status">
+        {% for status_choice in status_choice %}
+            <option value="{{ status_choice.0 }}">{{ status_choice.1 }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label>description:</label><br/>
+    <textarea name="description"></textarea><br/>
+
+    <label>detailed_description:</label><br/>
+    <textarea name="detailed_description"></textarea><br/><br/>
+
+    <label>data_of_complited:</label><br/>
+    <input type="date" name="data_of_complited"/><br/>
+    <br/>
+    <input type="submit" value="Send"/>
+</form>
+
+
+{% endblock %}
