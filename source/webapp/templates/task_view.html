@@ -7,10 +7,12 @@
     <h1>Articles</h1>
         <div class="card" >
             <div class="card-body">
+                <h4 class="card-summary">{{ task.summary }}</h4>
+                <h4 class="card-type">{{ task.type }}</h4>
                 <h5 class="card-title">{{ task.status }}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">{{ task.description }}</h6>
                 <p class="card-text">{{ task.detailed_description }}</p>
-                <p>{{ task.data_of_complited }}</p>
+                <wp>{{ task.data_of_complited }}</wp>
             </div>
         </div>
 {% endblock %}
