@@ -8,10 +8,14 @@
     {% for task in tasks %}
         <div class="card my-3" style="width: 18rem;">
             <div class="card-body">
+                <h4 class="card-summary">{{ task.summary }}</h4>
+                <h4 class="card-type">{{ task.type }}</h4>
                 <h5 class="card-title">{{ tasks.get_status_display}}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">{{ task.description }}</h6>
                 <p class="card-text">{{ task.data_of_complited}}</p>
                 <a href="{% url 'task-detail' pk=task.pk %}" class="card-link">Подробнее...</a>
+                <a href="{% url 'task_update_view' pk=task.pk %}" class="card-link">Редактировать</a>
+                <a href="{% url 'task_delete_view' pk=task.pk %}" class="card-link">Удалить</a>
             </div>
         </div>
     {% endfor %}
