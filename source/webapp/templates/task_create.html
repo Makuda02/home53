@@ -8,6 +8,9 @@
 
 <form action="/articles/add/" method="post">
     {% csrf_token %}
+    <label>summary</label>
+    <input type="text" name="summary">
+    </select>
     <label>status</label>
     <select name="status">
         {% for status_choice in status_choice %}
@@ -24,7 +27,7 @@
     <label>data_of_complited:</label><br/>
     <input type="date" name="data_of_complited"/><br/>
     <br/>
-    <input type="submit" value="Send"/>
+    <input type="submit" value="Send"/> 
 </form>
 
 
